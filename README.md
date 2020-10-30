@@ -11,7 +11,7 @@ Clone the repo
 git clone https://github.com/elliot-wheaton/tbl-scripts.git
 ```
 
-To get started, navigate to the 'tbl' folder and use the package manager [npm](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm) to install Google Puppeteer and related dependencies.
+To get started, navigate to the 'tbl' folder and use the package manager [NPM](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm) to install Google Puppeteer and related dependencies.
 
 ```bash
 cd tbl
