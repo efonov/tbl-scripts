@@ -2,7 +2,7 @@
 
 ## Background
 
-In order to update and enhance the user experience of the Talking Book Library website, Elliot Young, a part-time student worker wrote two scraping tools for the use of TBL to scrape the CELA database for TBL's booklist
+In order to update and enhance the user experience of the [Talking Book Library website](https://www.talkingbooklibrary.ca/tbl-book-list-2/), Elliot Young, a part-time student worker wrote two scraping tools for the use of TBL to scrape the CELA database for TBL's booklist
 
 ## Installation
 
