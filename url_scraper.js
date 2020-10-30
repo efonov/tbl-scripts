@@ -1,22 +1,23 @@
+require('dotenv').config()
+
 const puppeteer = require("puppeteer");
 const mysql = require("mysql");
 const keyword_extractor = require("keyword-extractor");
 
-const maxTabs = 4;
 var count = 0;
-var tabs = 0;
 
 main();
 
 async function main() {
+  require('dotenv').config()
   const tblArr = [];
-  const tableName = "urls";
+  const tableName = process.env.DB_SOURCE_TABLE;
   const connection = mysql.createConnection({
-    host: "localhost",
-    user: "root",
-    password: "secret",
-    database: "tbl_booklist",
-  });
+    host: process.env.DB_HOST,
+    user: process.env.DB_USER,
+    password: process.env.DB_PASS,
+    database: process.env.DB,
+})
 
   connection.connect(async function (err) {
     if (err) {
