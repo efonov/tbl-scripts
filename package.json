@@ -1,0 +1,33 @@
+{
+  "name": "talking-book-library",
+  "version": "1.0.0",
+  "description": "scraping tools for talking book library",
+  "main": "details_scraper.js",
+  "dependencies": {
+    "dotenv": "^8.2.0",
+    "keyword-extractor": "^0.0.19",
+    "mysql": "^2.18.1",
+    "puppeteer": "^5.3.1",
+    "sqlstring": "^2.3.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/elliot-wheaton/talking-book-library.git"
+  },
+  "keywords": [
+    "scraping",
+    "puppeteer",
+    "nodejs",
+    "mysql"
+  ],
+  "author": "Elliot Young",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/elliot-wheaton/talking-book-library/issues"
+  },
+  "homepage": "https://github.com/elliot-wheaton/talking-book-library#readme"
+}
