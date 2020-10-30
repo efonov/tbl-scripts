@@ -5,6 +5,11 @@
 In order to update and enhance the user experience of the [Talking Book Library website](https://www.talkingbooklibrary.ca/tbl-book-list-2/), Elliot Young, a part-time student worker wrote two scraping tools for the use of TBL to scrape the CELA database for TBL's booklist
 
 ## Installation
+Clone the repo
+
+```bash
+git clone https://github.com/elliot-wheaton/tbl-scripts.git
+```
 
 To get started, navigate to the 'tbl' folder and use the package manager [npm](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm) to install Google Puppeteer and related dependencies.
 
