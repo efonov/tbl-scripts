@@ -33,8 +33,8 @@ async function main() {
       result.forEach((element) => {
         tblArr.push({
           id: element.id,
-          title: element.title,
-          author: element.author,
+          title: element.tbl_title,
+          author: element.tbl_author,
         });
       });
     });

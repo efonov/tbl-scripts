@@ -33,6 +33,7 @@ CREATE TABLE `source` (
   `tbl_title` text,
   `tbl_author` text,
   `urls` text,
+  `searchurl` text,
   `hits` int DEFAULT NULL,
   PRIMARY KEY (`id`),
   UNIQUE KEY `id` (`id`)
