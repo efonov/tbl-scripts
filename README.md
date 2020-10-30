@@ -61,6 +61,11 @@ CREATE TABLE `result` (
   UNIQUE KEY `id` (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=796 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 ```
+### Clone Original TBL Data
+You will have to import a csv containing the raw TBL data for the scripts to use as search querries for the CELA content. Export a CSV form the [TBL Booklist for Development Purposes](https://docs.google.com/spreadsheets/d/1TRQAk5UVubXn2JeYWtzwXWDBKQAkfoO1049o9WgoIoQ/edit?usp=sharing) sheet called 'original_data'
+
+Then import this data as a csv into the table called 'source'. I use the program [TablePlus](https://tableplus.com/) to do this. Ignore the 'id' field and only match the 'title' and 'author columns
+
 ### Set your environment variables.
 
 In the project directory is a file called .env_example. This holds all of the necessary environment variables for the Node scripts to use the Database Tables you just created.
