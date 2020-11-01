@@ -88,7 +88,7 @@ The scraping takes place in two parts: first scaring for the URLs from CELA, the
 ### Scraping the URLs
 The first step of the scraping process is to scrape for the URLs associated with the TBL books on the CELA website. Navigate to the folder 'tbl' and run the node program url_scraper:
 ```bash
-cd tbl
+cd tbl-scripts
 node url_scraper.js
 ```
 Wait for this process to complete and watch the console output for any crashes.
@@ -96,7 +96,7 @@ Wait for this process to complete and watch the console output for any crashes.
 ### Scraping the CELA Data
 The second step of the scraping process is to scrape for all relevant data at each URL scraped in the last step. Navigate to the folder 'tbl' and run the node program url_scraper:
 ```bash
-cd tbl
+cd tbl-scripts
 node details_scraper.js
 ```
 When this process is complete, verify that your tables are populated with the new data and push it to production!
