@@ -14,12 +14,12 @@ git clone https://github.com/elliot-wheaton/tbl-scripts.git
 To get started, navigate to the 'tbl' folder and use the package manager [NPM](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm) to install Google Puppeteer and related dependencies.
 
 ```bash
-cd tbl
+cd tbl-scripts
 npm i
 ```
 
 ### DB Setup
-Create a new [MySQL](https://dev.mysql.com/doc/mysql-installation-excerpt/5.7/en/) Database with two tables: 'source', and 'result'. In terminal login to the MySQL editor:
+If you don't have MySql installed yet, install MySQL by following the instructions [HERE](https://dev.mysql.com/doc/mysql-installation-excerpt/5.7/en/). Create a new database with two tables: 'source', and 'result'. In terminal login to the MySQL editor (you will be prompted to enter your user password as well as the password for your mysql database):
 
 ```bash
 sudo mysql -p
