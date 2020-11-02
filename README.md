@@ -5,7 +5,7 @@
 In order to update and enhance the user experience of the [Talking Book Library website](https://www.talkingbooklibrary.ca/tbl-book-list-2/), Elliot Young, a part-time student worker wrote two scraping tools for the use of TBL to scrape the CELA database for TBL's booklist
 
 ## Installation
-Clone the repo
+Clone the repo into your workspace folder
 
 ```bash
 git clone https://github.com/elliot-wheaton/tbl-scripts.git
@@ -24,6 +24,8 @@ If you don't have MySql installed yet, install MySQL by following the instructio
 ```bash
 sudo mysql -p
 ```
+
+Create a new Database and note the name of it. This is the DB you will create the Tables in.
 
 Create the two tables:
 
@@ -80,15 +82,16 @@ DB_USER=root
 DB_PASS=secret
 DB=tbl_booklist
 DB_SOURCE_TABLE=source
-DB_RESULT_TABLE=production
+DB_RESULT_TABLE=result
 ```
 
 ## Usage
 The scraping takes place in two parts: first scaring for the URLs from CELA, then scraping for the data at each URL.
 ### Scraping the URLs
-The first step of the scraping process is to scrape for the URLs associated with the TBL books on the CELA website. Navigate to the folder 'tbl' and run the node program url_scraper:
+The first step of the scraping process is to scrape for the URLs associated with the TBL books on the CELA website. Navigate to the folder 'tbl', double check you've installed the npm packages, and run the node program url_scraper:
 ```bash
 cd tbl-scripts
+npm i
 node url_scraper.js
 ```
 Wait for this process to complete and watch the console output for any crashes.
